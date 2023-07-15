@@ -6,7 +6,6 @@ from fastapi import FastAPI, UploadFile, File, HTTPException, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
 
 from modal import Image, asgi_app
-
 from common import stub
 from transcriber import Whisper
 
@@ -60,7 +59,7 @@ async def create_and_get_prediction(prompt: str):
             raise HTTPException(status_code=400, detail="Failed to get prediction")
         
         if response.json().get('status') == 'succeeded':
-            output = response.json().get('output')[1]
+            output = response.json().get('output')[0]
             break
 
         if time.time() - start_time > 30:  # break after 30 seconds
