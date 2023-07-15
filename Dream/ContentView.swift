@@ -15,10 +15,8 @@ struct ContentView: View {
 
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
-    
-    @State private var inputText = ""
-    
-    @State var render = false
+        
+    var scaleAISpellbookCaller: ScaleAISpellbookCaller = ScaleAISpellbookCaller()
     
     @ObservedObject var textTo3DModel: TextTo3DModel = TextTo3DModel()
 
@@ -33,14 +31,26 @@ struct ContentView: View {
             TextField("Enter text here", text: $textTo3DModel.text3DPrompt)
                         .padding(10)
             
-            Toggle("Render", isOn: $render)
-                .toggleStyle(.button)
-                .padding(.top, 50)
+            Button(action: {                
+                Task {
+                    do {
+                        // Calling Scale AI Spellbook
+                        let response = try await scaleAISpellbookCaller.callAPI(input: "A bicycle")
+                        print(response.output)
+                    } catch {
+                        print("Failed to call API: \(error)")
+                    }
+                    print("Button tapped!")
+                }
+                    }) {
+                        Text("Generate")
+                            .foregroundColor(.white)
+                            .padding()
+                            .cornerRadius(10)
+                    }
 
             Toggle("Immersive", isOn: $showImmersiveSpace)
                 .toggleStyle(.button)
-                .padding(.top, 50)
-            
         }
         .navigationTitle("Content")
         .padding()

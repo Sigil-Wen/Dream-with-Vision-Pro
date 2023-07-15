@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		FABB4F252A632352000ACA71 /* baloon.obj in Resources */ = {isa = PBXBuildFile; fileRef = FABB4F242A632352000ACA71 /* baloon.obj */; };
 		FABB4F272A6323E5000ACA71 /* TextTo3DModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB4F262A6323E5000ACA71 /* TextTo3DModel.swift */; };
+		FABB4F292A632D9D000ACA71 /* ScaleAISpellbookCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB4F282A632D9D000ACA71 /* ScaleAISpellbookCaller.swift */; };
+		FABB4F2B2A63352D000ACA71 /* vaporwave_spinner.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FABB4F2A2A63352D000ACA71 /* vaporwave_spinner.usdz */; };
+		FABB4F2D2A6338BD000ACA71 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = FABB4F2C2A6338BD000ACA71 /* Config.plist */; };
 		FAE956F92A6319B10071BE90 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = FAE956F82A6319B10071BE90 /* RealityKitContent */; };
 		FAE956FB2A6319B10071BE90 /* DreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE956FA2A6319B10071BE90 /* DreamApp.swift */; };
 		FAE956FD2A6319B10071BE90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE956FC2A6319B10071BE90 /* ContentView.swift */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		FABB4F242A632352000ACA71 /* baloon.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baloon.obj; sourceTree = "<group>"; };
 		FABB4F262A6323E5000ACA71 /* TextTo3DModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTo3DModel.swift; sourceTree = "<group>"; };
+		FABB4F282A632D9D000ACA71 /* ScaleAISpellbookCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAISpellbookCaller.swift; sourceTree = "<group>"; };
+		FABB4F2A2A63352D000ACA71 /* vaporwave_spinner.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = vaporwave_spinner.usdz; sourceTree = "<group>"; };
+		FABB4F2C2A6338BD000ACA71 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		FAE956F32A6319B10071BE90 /* Dream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE956F72A6319B10071BE90 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		FAE956FA2A6319B10071BE90 /* DreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamApp.swift; sourceTree = "<group>"; };
@@ -87,9 +93,12 @@
 			children = (
 				FAE956FA2A6319B10071BE90 /* DreamApp.swift */,
 				FAE956FC2A6319B10071BE90 /* ContentView.swift */,
+				FABB4F2C2A6338BD000ACA71 /* Config.plist */,
 				FAE956FE2A6319B10071BE90 /* ImmersiveView.swift */,
 				FABB4F262A6323E5000ACA71 /* TextTo3DModel.swift */,
+				FABB4F282A632D9D000ACA71 /* ScaleAISpellbookCaller.swift */,
 				FAE957002A6319B10071BE90 /* ImageBasedLight.exr */,
+				FABB4F2A2A63352D000ACA71 /* vaporwave_spinner.usdz */,
 				FAE957022A6319B20071BE90 /* Assets.xcassets */,
 				FABB4F242A632352000ACA71 /* baloon.obj */,
 				FAE957042A6319B20071BE90 /* Preview Content */,
@@ -206,6 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE957032A6319B20071BE90 /* Assets.xcassets in Resources */,
+				FABB4F2B2A63352D000ACA71 /* vaporwave_spinner.usdz in Resources */,
+				FABB4F2D2A6338BD000ACA71 /* Config.plist in Resources */,
 				FABB4F252A632352000ACA71 /* baloon.obj in Resources */,
 				FAE957062A6319B20071BE90 /* Preview Assets.xcassets in Resources */,
 				FAE957012A6319B10071BE90 /* ImageBasedLight.exr in Resources */,
@@ -226,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABB4F292A632D9D000ACA71 /* ScaleAISpellbookCaller.swift in Sources */,
 				FAE956FD2A6319B10071BE90 /* ContentView.swift in Sources */,
 				FAE956FB2A6319B10071BE90 /* DreamApp.swift in Sources */,
 				FABB4F272A6323E5000ACA71 /* TextTo3DModel.swift in Sources */,
