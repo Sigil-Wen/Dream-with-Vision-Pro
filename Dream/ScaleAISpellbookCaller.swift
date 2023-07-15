@@ -29,6 +29,10 @@ import Foundation
 class ScaleAISpellbookCaller {
     
     struct InputData: Codable {
+        let input: InputInput
+    }
+    
+    struct InputInput: Codable {
         let input: String
     }
     
@@ -66,7 +70,9 @@ class ScaleAISpellbookCaller {
             request.setValue("Basic " + apiKey, forHTTPHeaderField: "Authorization")
             
             let encoder = JSONEncoder()
-            let inputData = InputData(input: input)
+            let inputInput = InputInput(input: input)
+
+            let inputData = InputData(input: inputInput)
             do {
                 let jsonData = try encoder.encode(inputData)
                 request.httpBody = jsonData
