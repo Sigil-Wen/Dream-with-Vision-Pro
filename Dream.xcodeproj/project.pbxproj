@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FABB4F252A632352000ACA71 /* baloon.obj in Resources */ = {isa = PBXBuildFile; fileRef = FABB4F242A632352000ACA71 /* baloon.obj */; };
+		FABB4F272A6323E5000ACA71 /* TextTo3DModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABB4F262A6323E5000ACA71 /* TextTo3DModel.swift */; };
+		FAE956F92A6319B10071BE90 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = FAE956F82A6319B10071BE90 /* RealityKitContent */; };
+		FAE956FB2A6319B10071BE90 /* DreamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE956FA2A6319B10071BE90 /* DreamApp.swift */; };
+		FAE956FD2A6319B10071BE90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE956FC2A6319B10071BE90 /* ContentView.swift */; };
+		FAE956FF2A6319B10071BE90 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE956FE2A6319B10071BE90 /* ImmersiveView.swift */; };
+		FAE957012A6319B10071BE90 /* ImageBasedLight.exr in Resources */ = {isa = PBXBuildFile; fileRef = FAE957002A6319B10071BE90 /* ImageBasedLight.exr */; };
+		FAE957032A6319B20071BE90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE957022A6319B20071BE90 /* Assets.xcassets */; };
+		FAE957062A6319B20071BE90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE957052A6319B20071BE90 /* Preview Assets.xcassets */; };
+		FAE957102A6319B20071BE90 /* DreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9570F2A6319B20071BE90 /* DreamTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE9570C2A6319B20071BE90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE956EB2A6319B10071BE90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE956F22A6319B10071BE90;
+			remoteInfo = Dream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FABB4F242A632352000ACA71 /* baloon.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baloon.obj; sourceTree = "<group>"; };
+		FABB4F262A6323E5000ACA71 /* TextTo3DModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTo3DModel.swift; sourceTree = "<group>"; };
+		FAE956F32A6319B10071BE90 /* Dream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE956F72A6319B10071BE90 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		FAE956FA2A6319B10071BE90 /* DreamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamApp.swift; sourceTree = "<group>"; };
+		FAE956FC2A6319B10071BE90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAE956FE2A6319B10071BE90 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		FAE957002A6319B10071BE90 /* ImageBasedLight.exr */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageBasedLight.exr; sourceTree = "<group>"; };
+		FAE957022A6319B20071BE90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAE957052A6319B20071BE90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAE9570B2A6319B20071BE90 /* DreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE9570F2A6319B20071BE90 /* DreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE956F02A6319B10071BE90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE956F92A6319B10071BE90 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE957082A6319B20071BE90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAE956EA2A6319B10071BE90 = {
+			isa = PBXGroup;
+			children = (
+				FAE956F52A6319B10071BE90 /* Dream */,
+				FAE956F62A6319B10071BE90 /* Packages */,
+				FAE9570E2A6319B20071BE90 /* DreamTests */,
+				FAE956F42A6319B10071BE90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE956F42A6319B10071BE90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE956F32A6319B10071BE90 /* Dream.app */,
+				FAE9570B2A6319B20071BE90 /* DreamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE956F52A6319B10071BE90 /* Dream */ = {
+			isa = PBXGroup;
+			children = (
+				FAE956FA2A6319B10071BE90 /* DreamApp.swift */,
+				FAE956FC2A6319B10071BE90 /* ContentView.swift */,
+				FAE956FE2A6319B10071BE90 /* ImmersiveView.swift */,
+				FABB4F262A6323E5000ACA71 /* TextTo3DModel.swift */,
+				FAE957002A6319B10071BE90 /* ImageBasedLight.exr */,
+				FAE957022A6319B20071BE90 /* Assets.xcassets */,
+				FABB4F242A632352000ACA71 /* baloon.obj */,
+				FAE957042A6319B20071BE90 /* Preview Content */,
+			);
+			path = Dream;
+			sourceTree = "<group>";
+		};
+		FAE956F62A6319B10071BE90 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FAE956F72A6319B10071BE90 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		FAE957042A6319B20071BE90 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAE957052A6319B20071BE90 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAE9570E2A6319B20071BE90 /* DreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE9570F2A6319B20071BE90 /* DreamTests.swift */,
+			);
+			path = DreamTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE956F22A6319B10071BE90 /* Dream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE957132A6319B20071BE90 /* Build configuration list for PBXNativeTarget "Dream" */;
+			buildPhases = (
+				FAE956EF2A6319B10071BE90 /* Sources */,
+				FAE956F02A6319B10071BE90 /* Frameworks */,
+				FAE956F12A6319B10071BE90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dream;
+			packageProductDependencies = (
+				FAE956F82A6319B10071BE90 /* RealityKitContent */,
+			);
+			productName = Dream;
+			productReference = FAE956F32A6319B10071BE90 /* Dream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAE9570A2A6319B20071BE90 /* DreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE957162A6319B20071BE90 /* Build configuration list for PBXNativeTarget "DreamTests" */;
+			buildPhases = (
+				FAE957072A6319B20071BE90 /* Sources */,
+				FAE957082A6319B20071BE90 /* Frameworks */,
+				FAE957092A6319B20071BE90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE9570D2A6319B20071BE90 /* PBXTargetDependency */,
+			);
+			name = DreamTests;
+			productName = DreamTests;
+			productReference = FAE9570B2A6319B20071BE90 /* DreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE956EB2A6319B10071BE90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FAE956F22A6319B10071BE90 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FAE9570A2A6319B20071BE90 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FAE956F22A6319B10071BE90;
+					};
+				};
+			};
+			buildConfigurationList = FAE956EE2A6319B10071BE90 /* Build configuration list for PBXProject "Dream" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAE956EA2A6319B10071BE90;
+			productRefGroup = FAE956F42A6319B10071BE90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE956F22A6319B10071BE90 /* Dream */,
+				FAE9570A2A6319B20071BE90 /* DreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE956F12A6319B10071BE90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE957032A6319B20071BE90 /* Assets.xcassets in Resources */,
+				FABB4F252A632352000ACA71 /* baloon.obj in Resources */,
+				FAE957062A6319B20071BE90 /* Preview Assets.xcassets in Resources */,
+				FAE957012A6319B10071BE90 /* ImageBasedLight.exr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE957092A6319B20071BE90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE956EF2A6319B10071BE90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE956FD2A6319B10071BE90 /* ContentView.swift in Sources */,
+				FAE956FB2A6319B10071BE90 /* DreamApp.swift in Sources */,
+				FABB4F272A6323E5000ACA71 /* TextTo3DModel.swift in Sources */,
+				FAE956FF2A6319B10071BE90 /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE957072A6319B20071BE90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE957102A6319B20071BE90 /* DreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE9570D2A6319B20071BE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE956F22A6319B10071BE90 /* Dream */;
+			targetProxy = FAE9570C2A6319B20071BE90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAE957112A6319B20071BE90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		FAE957122A6319B20071BE90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		FAE957142A6319B20071BE90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dream/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sigilwen.ca.Dream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		FAE957152A6319B20071BE90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dream/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sigilwen.ca.Dream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		FAE957172A6319B20071BE90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sigilwen.ca.DreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dream";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		FAE957182A6319B20071BE90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sigilwen.ca.DreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dream.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dream";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE956EE2A6319B10071BE90 /* Build configuration list for PBXProject "Dream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE957112A6319B20071BE90 /* Debug */,
+				FAE957122A6319B20071BE90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE957132A6319B20071BE90 /* Build configuration list for PBXNativeTarget "Dream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE957142A6319B20071BE90 /* Debug */,
+				FAE957152A6319B20071BE90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE957162A6319B20071BE90 /* Build configuration list for PBXNativeTarget "DreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE957172A6319B20071BE90 /* Debug */,
+				FAE957182A6319B20071BE90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAE956F82A6319B10071BE90 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FAE956EB2A6319B10071BE90 /* Project object */;
+}
