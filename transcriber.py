@@ -1,5 +1,6 @@
 """
 Speech-to-text transcriptiong service based on OpenAI Whisper.
+From Modal's quillman
 """
 
 import tempfile
@@ -7,10 +8,9 @@ import time
 
 from modal import Image, method
 
-from .common import stub
+from common import stub
 
 MODEL_NAME = "base.en"
-
 
 def download_model():
     import whisper

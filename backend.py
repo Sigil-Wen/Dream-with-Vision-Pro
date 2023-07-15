@@ -11,9 +11,13 @@ from fastapi import FastAPI, UploadFile, File, HTTPException, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse, JSONResponse
 
-from modal import Image, Stub, asgi_app
+from modal import Image, asgi_app
+
+from common import stub
+from transcriber import Whisper
 
 app = FastAPI()
+transcriber = Whisper()
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,7 +27,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-stub = Stub("dream")
 image = Image.debian_slim().pip_install(
     "requests", 
     "replicate",
@@ -75,7 +78,12 @@ async def create_and_get_prediction(prompt: str):
         raise HTTPException(status_code=400, detail="Failed to get prediction")
     
     return output
-    
+
+@app.post("/transcribe")
+async def transcribe(request: Request):
+    bytes = await request.body()
+    result = transcriber.transcribe_segment.call(bytes)
+    return result["text"]
 
 @stub.function(image=image, gpu="any", secrets=[
     modal.Secret.from_name("openai-api-key"),
@@ -94,4 +102,3 @@ def fastapi_app():
 
 if __name__ == "__main__":
     stub.deploy("webapp")
-
