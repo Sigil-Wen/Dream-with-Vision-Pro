@@ -1,15 +1,9 @@
-import io
 import json
-import os
-import base64
-import requests
-from urllib.parse import urlencode
 import time
 import modal
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, Request, Form
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import RedirectResponse, JSONResponse
 
 from modal import Image, asgi_app
 
