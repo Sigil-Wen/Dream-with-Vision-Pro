@@ -2,7 +2,6 @@
 
 [![Discord](https://img.shields.io/discord/1126234207044247622)](https://discord.gg/C6ukDBEbFY)
 
-
 Welcome to Dream with Vision Pro, a lucid text-to-3D tool built with the Apple VisionOS SDK. Powered by Scale AI's Spellbook, OpenAI's GPT-4 and Shap-E, Modal, Replicate, and the Meta Quest 2, we empower you to transform your imagination into stunning immersive experiences.
 
 <h2 align="center"><b>Demo</b></h2>
