@@ -11,3 +11,5 @@ Welcome to Dream with Vision Pro, a lucid text-to-3D tool built with the Apple V
 ##  Enter Your Vision:
 
 Simply type in the text description of the object you envision. It could be anything from an elephant to a sword. Let your imagination run wild and express it in words.
+
+We also use Modal's quillman example for hosting OpenAI's Whisper.
