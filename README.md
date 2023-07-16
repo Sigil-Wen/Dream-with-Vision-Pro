@@ -10,6 +10,14 @@ Welcome to Dream with Vision Pro, a lucid text-to-3D tool built with the Apple V
 
 Type in the text description of the object you envision. This could be anything from an elephant to a sword. Unleash your imagination. Once you've described it, your object will appear before you.
 
+## Demo
+
+![Alt text](image-3.png)
+
+Using Scale AI's Spellbound to infer the size of the objects to render accurately. 
+
+![Alt text](image-1.png)
+
 ## How it Works
 
 Here's a step-by-step breakdown of what Dream with Vision Pro does:
@@ -19,6 +27,32 @@ First, the user specifies the object they want to visualize. This input triggers
 Next, we employ [Spellbook](https://dashboard.scale.com/spellbook/api/v2/deploy/9f33d7g) and GPT-4 to estimate the object's height, ensuring the 3D representation is accurately scaled.
 
 The final phase employs [3D Viewer](https://3dviewer.net) to convert your .obj file into a realistic 3D model that you can interact with. This 3D model can be directly accessed from your Meta Quest 2, offering a fully immersive experience of your original concept.
+
+## Spellbook Prompts
+
+### System:
+
+```
+As an AI system, you are extremely skilled at extracting objects and estimating their realistic height in meters from a given text prompt. Your task is to identify the object(s) mentioned in the prompt and their estimated height in meters. Once identified, the information must be formatted according to the provided format for a text-to-3D model application.
+```
+
+### User:
+
+```
+Could you extract the object and realistic object height in meters from the following text prompts?
+
+Begin:
+
+Input: a red apple
+Output: 0.075
+
+Input: a large elephant
+Output: 3.000
+
+
+Input: {{ input }}
+Output:
+```
 
 ## Next Steps
 
