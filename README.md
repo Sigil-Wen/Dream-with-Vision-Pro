@@ -24,7 +24,7 @@ Using Scale AI's Spellbound to infer the size of the objects to render accuratel
 
 Here's a step-by-step breakdown of what Dream with Vision Pro does:
 
-First, the user specifies the object they want to visualize. This input triggers the [Shap-E](https://github.com/openai/shap-e) model via [Modal](https://mcantillon21--dream-fastapi-app.modal.run/) and Replicate, producing a .obj file - a standard 3D model format.
+First, the user specifies the object they want to visualize. This input triggers the [Shap-E](https://github.com/openai/shap-e) model via [Modal](https://mcantillon21--dream-fastapi-app.modal.run/) and [Replicate](https://replicate.com/), producing a .obj file - a standard 3D model format.
 
 Next, we employ [Spellbook](https://dashboard.scale.com/spellbook/api/v2/deploy/9f33d7g) and GPT-4 to estimate the object's height, ensuring the 3D representation is accurately scaled.
 
