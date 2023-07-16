@@ -61,3 +61,7 @@ Output:
 We've started to integrate OpenAI's Whisper model, expanding our capability beyond text-to-3D transformations. Users will be able to engage in a more intuitive way, interacting with their 3D creations through the power of voice.
 
 Once we have the .obj file, we are working on using [USZD Tools](https://developer.apple.com/augmented-reality/tools/) which lets us convert to the .usdz format - a requisite for VisionOS. Following this conversion, we can seamlessly render the objects.
+
+## Acknowledgements
+
+We thank the Scale AI Spellbook team for the credits and ease of use, Ben Firshman of Replicate for the dedicated A100 GPU we run Shap-E on, Erik Bernhardsson of Modal for the dedicated Whisper and hosted endpoints, and especially Mehran Jalali for letting us borrow the Meta Quest 2 for testing.
