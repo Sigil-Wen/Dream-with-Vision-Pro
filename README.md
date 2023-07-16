@@ -1,3 +1,5 @@
+![Alt text](image-4.png)
+
 # Dream with Vision Pro
 
 [![Discord](https://img.shields.io/discord/1126234207044247622)](https://discord.gg/C6ukDBEbFY)
