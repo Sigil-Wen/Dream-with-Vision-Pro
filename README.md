@@ -8,7 +8,7 @@ Welcome to Dream with Vision Pro, a lucid text-to-3D tool built with the Apple V
 
 ##  Enter Your Vision:
 
-Type in the text description of the object you envision. It could be anything from an elephant to a sword. Let your imagination run wild.
+Type in the text description of the object you envision. This could be anything from an elephant to a sword. Unleash your imagination. Once you've described it, your object will appear before you.
 
 ## How it Works
 Here's a step-by-step breakdown of what Dream with Vision Pro does:
