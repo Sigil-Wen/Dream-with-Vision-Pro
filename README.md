@@ -64,4 +64,4 @@ Once we have the .obj file, we are working on using [USZD Tools](https://develop
 
 ## Acknowledgements
 
-We thank the Scale AI Spellbook team for the credits and ease of use, Ben Firshman of Replicate for the dedicated A100 GPU we run Shap-E on, Erik Bernhardsson of Modal for the dedicated Whisper and hosted endpoints, and especially Mehran Jalali for letting us borrow the Meta Quest 2 for testing.
+We thank the Scale AI Spellbook team for the credits and ease of use, Ben Firshman of Replicate for the dedicated A100 GPU we run Shap-E on, Erik Bernhardsson of Modal for dedicated Whisper and hosted endpoints, and especially Mehran Jalali for letting us borrow the Meta Quest 2 for testing.
