@@ -28,7 +28,7 @@ First, the user specifies the object they want to visualize. This input triggers
 
 Next, we employ [Spellbook](https://dashboard.scale.com/spellbook/api/v2/deploy/9f33d7g) and GPT-4 to estimate the object's height, ensuring the 3D representation is accurately scaled.
 
-The final phase employs [3D Viewer](https://3dviewer.net) to convert your .obj file into a realistic 3D model that you can interact with. This 3D model can be directly accessed from your Meta Quest 2, offering a fully immersive experience of your original concept.
+The final phase employs [3D Viewer](https://3dviewer.net) to convert your .obj file into a realistic 3D model that you can interact with. This 3D model can be directly accessed from Apple's VisionOS, which we stream directly to your Meta Quest 2, offering a fully immersive experience of your original concept.
 
 ## Spellbook Prompts
 
