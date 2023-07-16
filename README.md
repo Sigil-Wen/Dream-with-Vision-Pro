@@ -13,11 +13,11 @@ Type in the text description of the object you envision. This could be anything 
 ## How it Works
 Here's a step-by-step breakdown of what Dream with Vision Pro does:
 
-First, the user specifies the object they want to visualize. This input triggers the Shap-E model via Modal and Replicate, producing a .obj file - a standard 3D model format.
+First, the user specifies the object they want to visualize. This input triggers the [Shap-E](https://github.com/openai/shap-e) model via [Modal](https://mcantillon21--dream-fastapi-app.modal.run/) and Replicate, producing a .obj file - a standard 3D model format.
 
-Once we have the .obj file, we call a Modal endpoint which lets us convert to the .usdz format - the format VisionOS uses.
+Once we have the .obj file, we use [USZD Tools](https://developer.apple.com/augmented-reality/tools/) which lets us convert to the .usdz format - the format VisionOS uses.
 
-Next, we employ Spellbook and GPT-4 to estimate the object's height, ensuring the 3D representation is accurately scaled.
+Next, we employ [Spellbook](https://dashboard.scale.com/spellbook/api/v2/deploy/9f33d7g) and GPT-4 to estimate the object's height, ensuring the 3D representation is accurately scaled.
 
 The final step utilizes VisionOS to render your object into a realistic 3D model. This 3D model is then streamed directly to your Meta Quest 2, providing an immersive experience of your original idea.
 
