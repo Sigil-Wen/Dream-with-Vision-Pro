@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "logo.png",
       "idiom" : "reality",
       "scale" : "2x"
     }

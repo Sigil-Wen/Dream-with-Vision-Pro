@@ -19,6 +19,8 @@ class ModalShapETextTo3D: ObservableObject {
     
     @Published var isGenerating: Bool = false
     
+    @Published var gifURL: URL?
+    
     func postRequest(prompt: String) async throws -> String {
         let url = URL(string: "https://mcantillon21--dream-fastapi-app.modal.run/predictions/" + prompt)!
         var request = URLRequest(url: url)

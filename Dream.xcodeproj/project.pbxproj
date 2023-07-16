@@ -218,6 +218,9 @@
 				Base,
 			);
 			mainGroup = FAE956EA2A6319B10071BE90;
+			packageReferences = (
+				FA5BB14F2A63670D0083CCE9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = FAE956F42A6319B10071BE90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -534,6 +537,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA5BB14F2A63670D0083CCE9 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		FAE956F82A6319B10071BE90 /* RealityKitContent */ = {
