@@ -4,6 +4,8 @@
 
 Welcome to Dream with Vision Pro, a lucid text-to-3D tool built with the Apple VisionOS SDK. Powered by Scale AI's Spellbook, OpenAI's GPT-4 and Shap-E, Modal, Replicate, and the Meta Quest 2, we empower you to transform your imagination into stunning immersive experiences.
 
+![Alt text](image.png)
+
 <h2 align="center"><b>Demo</b></h2>
 
 ##  Enter Your Vision:
