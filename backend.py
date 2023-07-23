@@ -21,45 +21,46 @@ app.add_middleware(
 )
 
 image = Image.debian_slim().pip_install(
-    "requests", 
+    "requests",
     "replicate",
-    "openai", 
+    "openai",
 )
-        
+
+
 @app.get("/")
 def root():
     return {"hello": "world"}
+
 
 @app.post("/predictions/{prompt}")
 async def create_and_get_prediction(prompt: str):
     headers = {
         "Authorization": f"Token REPLICATE_API_TOKEN",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
     }
     print("in predictions with prompt and headers", prompt, headers)
-    
+
     response = requests.post(
         "https://api.replicate.com/v1/deployments/replicate/shap-e-test/predictions",
         headers=headers,
-        data=json.dumps({"input": {"prompt": prompt, "save_mesh": True}})
+        data=json.dumps({"input": {"prompt": prompt, "save_mesh": True}}),
     )
     print("response from prediction creation", response.json())
-        
+
     output = ""
-    prediction_id = response.json()['id']
+    prediction_id = response.json()["id"]
     start_time = time.time()
-    
+
     while True:
-        print('trying for seconds:', time.time() - start_time)
+        print("trying for seconds:", time.time() - start_time)
         response = requests.get(
-            f"https://api.replicate.com/v1/predictions/{prediction_id}",
-            headers=headers
+            f"https://api.replicate.com/v1/predictions/{prediction_id}", headers=headers
         )
         if response.status_code != 200:
             raise HTTPException(status_code=400, detail="Failed to get prediction")
-        
-        if response.json().get('status') == 'succeeded':
-            output = response.json().get('output')[0]
+
+        if response.json().get("status") == "succeeded":
+            output = response.json().get("output")[0]
             break
 
         if time.time() - start_time > 30:  # break after 30 seconds
@@ -69,8 +70,9 @@ async def create_and_get_prediction(prompt: str):
 
     if response.status_code != 200:
         raise HTTPException(status_code=400, detail="Failed to get prediction")
-    
+
     return output
+
 
 @app.post("/transcribe")
 async def transcribe(request: Request):
@@ -78,10 +80,14 @@ async def transcribe(request: Request):
     result = transcriber.transcribe_segment.call(bytes)
     return result["text"]
 
-@stub.function(image=image, gpu="any", secrets=[
-    modal.Secret.from_name("openai-api-key"),
-])
 
+@stub.function(
+    image=image,
+    gpu="any",
+    secrets=[
+        modal.Secret.from_name("openai-api-key"),
+    ],
+)
 @asgi_app()
 def fastapi_app():
     app.add_middleware(
@@ -92,6 +98,7 @@ def fastapi_app():
         allow_headers=["*"],
     )
     return app
+
 
 if __name__ == "__main__":
     stub.deploy("webapp")
